@@ -1,0 +1,195 @@
+
+ BLOCK:  B1       MODEL: RADFRAC         
+ -------------------------------
+    INLETS   - 1        STAGE   6
+    OUTLETS  - 2        STAGE   1
+               3        STAGE  11
+   PROPERTY OPTION SET:   NRTL      RENON (NRTL) / IDEAL GAS                    
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(KMOL/SEC)            100.000         100.000         0.00000    
+       MASS(KG/SEC  )            8230.93         8230.93        0.657872E-10
+       ENTHALPY(WATT    )      -0.388436E+11   -0.377952E+11   -0.269907E-01
+
+                      ***  CO2 EQUIVALENT SUMMARY ***
+    FEED STREAMS CO2E             0.00000      KG/SEC          
+    PRODUCT STREAMS CO2E          0.00000      KG/SEC          
+    NET STREAMS CO2E PRODUCTION   0.00000      KG/SEC          
+    UTILITIES CO2E PRODUCTION     0.00000      KG/SEC          
+    TOTAL CO2E PRODUCTION         0.00000      KG/SEC          
+
+
+
+                         **********************
+                         ****  INPUT DATA  ****
+                         **********************
+
+   ****   INPUT PARAMETERS   ****
+
+    NUMBER OF STAGES                                        11
+    ALGORITHM OPTION                                      STANDARD    
+    ABSORBER OPTION                                       NO      
+    INITIALIZATION OPTION                                 STANDARD    
+    HYDRAULIC PARAMETER CALCULATIONS                      NO      
+    INSIDE LOOP CONVERGENCE METHOD                        BROYDEN 
+    DESIGN SPECIFICATION METHOD                           NESTED  
+    MAXIMUM NO. OF OUTSIDE LOOP ITERATIONS                  25
+    MAXIMUM NO. OF INSIDE LOOP ITERATIONS                   10
+    MAXIMUM NUMBER OF FLASH ITERATIONS                      30
+    FLASH TOLERANCE                                          0.000100000
+    OUTSIDE LOOP CONVERGENCE TOLERANCE                       0.000100000
+
+   ****   COL-SPECS   ****
+
+    MOLAR VAPOR DIST / TOTAL DIST                            0.0        
+    MOLAR REFLUX RATIO                                       0.74010    
+    MOLAR DISTILLATE RATE          KMOL/SEC                 44.5600     
+
+   ****    PROFILES   ****
+
+    P-SPEC          STAGE   1  PRES, N/SQM             101,325.         
+
+                          *******************
+                          ****  RESULTS  ****
+                          *******************
+
+
+   ***   COMPONENT SPLIT FRACTIONS   ***
+
+                             OUTLET STREAMS 
+                             --------------
+                  2            3       
+    COMPONENT:
+    ACETO-01    .95031       .49687E-01
+    N-PRO-01    .32653E-01   .96735    
+
+ 
+   ***    SUMMARY OF KEY RESULTS    ***
+
+    TOP STAGE TEMPERATURE          K                       330.190      
+    BOTTOM STAGE TEMPERATURE       K                       370.171      
+    TOP STAGE LIQUID FLOW          KMOL/SEC                 32.9789     
+    BOTTOM STAGE LIQUID FLOW       KMOL/SEC                 55.4400     
+    TOP STAGE VAPOR FLOW           KMOL/SEC                  0.0        
+    BOILUP VAPOR FLOW              KMOL/SEC                 83.8165     
+    MOLAR REFLUX RATIO                                       0.74010    
+    MOLAR BOILUP RATIO                                       1.51184    
+    CONDENSER DUTY (W/O SUBCOOL)   WATT                     -0.193896+10
+    REBOILER DUTY                  WATT                      0.298737+10
+
+   ****   MAXIMUM FINAL RELATIVE ERRORS   ****
+
+    DEW POINT                        50.978      STAGE=  4
+    BUBBLE POINT                    0.98077      STAGE=  4
+    COMPONENT MASS BALANCE          0.27853E-05  STAGE=  4 COMP=N-PRO-01
+    ENERGY BALANCE                  0.55229E-04  STAGE=  5
+
+
+   ****    PROFILES   ****
+
+   **NOTE** REPORTED VALUES FOR STAGE LIQUID AND VAPOR RATES ARE THE FLOWS
+            FROM THE STAGE INCLUDING ANY SIDE PRODUCT.
+
+                                          ENTHALPY
+ STAGE TEMPERATURE   PRESSURE             J/KMOL             HEAT DUTY
+       K             N/SQM          LIQUID       VAPOR        WATT    
+
+   1   330.19       0.10132E+06  -0.25305E+09 -0.21568E+09  -.19390+10
+   2   267.01       0.10132E+06  -0.32441E+09 -0.22805E+09            
+   4   265.46       0.10132E+06  -0.45788E+09 -0.27710E+09            
+   5   343.80       0.10132E+06  -0.37354E+09 -0.25930E+09            
+   6   342.75       0.10132E+06  -0.36641E+09 -0.25531E+09            
+   7   344.20       0.10132E+06  -0.37619E+09 -0.26087E+09            
+   8   347.76       0.10132E+06  -0.39771E+09 -0.27561E+09            
+  10   363.43       0.10132E+06  -0.46123E+09 -0.36282E+09            
+  11   370.17       0.10132E+06  -0.47834E+09 -0.41427E+09   .29874+10
+
+ STAGE     FLOW RATE                  FEED RATE               PRODUCT RATE
+            KMOL/SEC                   KMOL/SEC                 KMOL/SEC
+       LIQUID     VAPOR       LIQUID    VAPOR    MIXED      LIQUID    VAPOR
+   1  77.54      0.000                                       44.5600          
+   2  24.38      77.54                                                        
+   4  11.17      65.62                                                        
+   5  17.25      55.73                                                        
+   6  142.5      61.81       100.0000                                         
+   7  141.4      87.10                                                        
+   8  139.5      86.00                                                        
+  10  139.3      82.62                                                        
+  11  55.44      83.82                                       55.4400          
+
+    ****  MASS FLOW PROFILES  ****
+
+ STAGE     FLOW RATE                  FEED RATE               PRODUCT RATE
+            KG/SEC                     KG/SEC                   KG/SEC  
+       LIQUID     VAPOR       LIQUID    VAPOR    MIXED      LIQUID    VAPOR
+   1  4641.      0.000                                     2667.1624          
+   2  1721.      4641.                                                        
+   4  1040.      4491.                                                        
+   5  1400.      3707.                                                        
+   6 0.1138E+05  4067.      8230.9278                                         
+   7 0.1154E+05  5819.                                                        
+   8 0.1192E+05  5978.                                                        
+  10 0.1352E+05  7064.                                                        
+  11  5564.      7958.                                     5563.7654          
+
+                         ****   MOLE-X-PROFILE     ****
+   STAGE     ACETO-01      N-PRO-01
+      1    0.95970       0.40303E-01
+      2    0.71569       0.28431    
+      4    0.20408       0.79592    
+      5    0.47676       0.52324    
+      6    0.50560       0.49440    
+      7    0.46601       0.53399    
+      8    0.37847       0.62153    
+     10    0.11434       0.88566    
+     11    0.40330E-01   0.95967    
+
+                         ****   MOLE-Y-PROFILE     ****
+   STAGE     ACETO-01      N-PRO-01
+      1    0.99005       0.99455E-02
+      2    0.95970       0.40303E-01
+      4    0.76472       0.23528    
+      5    0.80829       0.19171    
+      6    0.82492       0.17508    
+      7    0.80176       0.19824    
+      8    0.74042       0.25958    
+     10    0.37754       0.62246    
+     11    0.16329       0.83671    
+
+                         ****   K-VALUES           ****
+   STAGE     ACETO-01      N-PRO-01
+      1     1.0316       0.24677    
+      2    0.67987E-01   0.71851E-02
+      4    0.72039E-01   0.56882E-02
+      5     1.6954       0.36638    
+      6     1.6316       0.35413    
+      7     1.7205       0.37123    
+      8     1.9564       0.41763    
+     10     3.3020       0.70283    
+     11     4.0488       0.87188    
+
+                         ****   MASS-X-PROFILE     ****
+   STAGE     ACETO-01      N-PRO-01
+      1    0.93123       0.68771E-01
+      2    0.58873       0.41127    
+      4    0.12726       0.87274    
+      5    0.34131       0.65869    
+      6    0.36771       0.63229    
+      7    0.33167       0.66833    
+      8    0.25721       0.74279    
+     10    0.68393E-01   0.93161    
+     11    0.23341E-01   0.97666    
+
+                         ****   MASS-Y-PROFILE     ****
+   STAGE     ACETO-01      N-PRO-01
+      1    0.98264       0.17358E-01
+      2    0.93123       0.68771E-01
+      4    0.64892       0.35108    
+      5    0.70568       0.29432    
+      6    0.72821       0.27179    
+      7    0.69697       0.30303    
+      8    0.61862       0.38138    
+     10    0.25646       0.74354    
+     11    0.99894E-01   0.90011    

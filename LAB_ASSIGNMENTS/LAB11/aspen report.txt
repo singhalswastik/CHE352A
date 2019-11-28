@@ -1,0 +1,172 @@
+
+ BLOCK:  B1       MODEL: HEATX           
+ -----------------------------
+   HOT SIDE:
+   ---------
+   INLET STREAM:             4       
+   OUTLET STREAM:            3       
+   PROPERTY OPTION SET:   NRTL      RENON (NRTL) / IDEAL GAS                    
+   COLD SIDE:
+   ----------
+   INLET STREAM:             1       
+   OUTLET STREAM:            2       
+   PROPERTY OPTION SET:   NRTL      RENON (NRTL) / IDEAL GAS                    
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(KMOL/HR )            1139.94         1139.94         0.00000    
+       MASS(KG/HR   )            20536.3         20536.3         0.00000    
+       ENTHALPY(CAL/SEC )      -0.214339E+08   -0.214339E+08     0.00000    
+
+                      ***  CO2 EQUIVALENT SUMMARY ***
+    FEED STREAMS CO2E             0.00000      KG/HR           
+    PRODUCT STREAMS CO2E          0.00000      KG/HR           
+    NET STREAMS CO2E PRODUCTION   0.00000      KG/HR           
+    UTILITIES CO2E PRODUCTION     0.00000      KG/HR           
+    TOTAL CO2E PRODUCTION         0.00000      KG/HR           
+
+                          ***  INPUT DATA  ***
+
+   FLASH SPECS FOR HOT SIDE:
+   TWO    PHASE      FLASH
+   MAXIMUM NO. ITERATIONS                                   30
+   CONVERGENCE TOLERANCE                                     0.000100000
+
+   FLASH SPECS FOR COLD SIDE:
+   TWO    PHASE      FLASH
+   MAXIMUM NO. ITERATIONS                                   30
+   CONVERGENCE TOLERANCE                                     0.000100000
+
+   FLOW DIRECTION AND SPECIFICATION:
+     MULTIPLE TUBE PASS SHELL AND TUBE HEAT EXCHANGER
+     NUMBER OF SHELLS IN SERIES:                             1.00
+     SPECIFIED COLD OUTLET TEMP    
+     SPECIFIED VALUE                C                       55.0000
+     MINIMUM LMTD CORRECTION FACTOR:                         0.80000
+
+   PRESSURE SPECIFICATION:
+     HOT  SIDE PRESSURE DROP        BAR                      0.0000
+     COLD SIDE PRESSURE DROP        BAR                      0.0000
+
+   HEAT TRANSFER COEFFICIENT SPECIFICATION:
+     OVERALL COEFFICIENT            CAL/SEC-SQCM-K           0.0339
+
+                        ***  OVERALL RESULTS  ***
+
+   STREAMS:
+                   --------------------------------------
+                   |                                    |
+   4         ----->|                HOT                 |-----> 3       
+   T=  9.3000D+01  |                                    |       T=  6.0353D+01
+   P=  1.0000D+00  |                                    |       P=  1.0000D+00
+   V=  0.0000D+00  |                                    |       V=  0.0000D+00
+                   |                                    |
+   2         <-----|                COLD                |<----- 1       
+   T=  5.5000D+01  |                                    |       T=  3.8000D+01
+   P=  1.0000D+00  |                                    |       P=  1.0000D+00
+   V=  0.0000D+00  |                                    |       V=  0.0000D+00
+                   --------------------------------------
+
+   DUTY AND AREA:
+     CALCULATED HEAT DUTY           CAL/SEC              65022.0403
+     CALCULATED (REQUIRED) AREA     SQM                      7.3879
+     ACTUAL EXCHANGER AREA          SQM                      7.3879
+     PER CENT OVER-DESIGN                                    0.0000
+
+   HEAT TRANSFER COEFFICIENT:
+     AVERAGE COEFFICIENT (DIRTY)    CAL/SEC-SQCM-K           0.0339
+     UA (DIRTY)                     CAL/SEC-K             2503.9328
+
+   LOG-MEAN TEMPERATURE DIFFERENCE:
+     LMTD CORRECTION FACTOR                                  0.8806
+     LMTD (CORRECTED)               C                       25.9680
+     NUMBER OF SHELLS IN SERIES                               1
+
+   PRESSURE DROP:
+     HOTSIDE, TOTAL                 BAR                      0.0000
+     COLDSIDE, TOTAL                BAR                      0.0000
+
+ HEATX COLD-TQCU B1       TQCURV INLET   
+ -------------------------------------
+   PRESSURE PROFILE:      CONSTANT2   
+   PRESSURE DROP:         0.0         BAR             
+   PROPERTY OPTION SET:   NRTL      RENON (NRTL) / IDEAL GAS                    
+
+ -----------------------------------------------------
+ !  DUTY      !  PRES      !  TEMP      !  VFRAC     !
+ !            !            !            !            !
+ !            !            !            !            !
+ !            !            !            !            !
+ !  CAL/SEC   !  BAR       !  C         !            !
+ !            !            !            !            !
+ !============!============!============!============!
+ !     0.0    !     1.0000 !    55.0000 !     0.0    !
+ !  3096.2876 !     1.0000 !    54.1981 !     0.0    !
+ !  6192.5753 !     1.0000 !    53.3954 !     0.0    !
+ !  9288.8629 !     1.0000 !    52.5920 !     0.0    !
+ !  1.2385+04 !     1.0000 !    51.7877 !     0.0    !
+ !------------+------------+------------+------------!
+ !  1.5481+04 !     1.0000 !    50.9827 !     0.0    !
+ !  1.8578+04 !     1.0000 !    50.1769 !     0.0    !
+ !  2.1674+04 !     1.0000 !    49.3703 !     0.0    !
+ !  2.4770+04 !     1.0000 !    48.5629 !     0.0    !
+ !  2.7867+04 !     1.0000 !    47.7548 !     0.0    !
+ !------------+------------+------------+------------!
+ !  3.0963+04 !     1.0000 !    46.9460 !     0.0    !
+ !  3.4059+04 !     1.0000 !    46.1363 !     0.0    !
+ !  3.7155+04 !     1.0000 !    45.3260 !     0.0    !
+ !  4.0252+04 !     1.0000 !    44.5149 !     0.0    !
+ !  4.3348+04 !     1.0000 !    43.7030 !     0.0    !
+ !------------+------------+------------+------------!
+ !  4.6444+04 !     1.0000 !    42.8905 !     0.0    !
+ !  4.9541+04 !     1.0000 !    42.0772 !     0.0    !
+ !  5.2637+04 !     1.0000 !    41.2631 !     0.0    !
+ !  5.5733+04 !     1.0000 !    40.4484 !     0.0    !
+ !  5.8829+04 !     1.0000 !    39.6330 !     0.0    !
+ !------------+------------+------------+------------!
+ !  6.1926+04 !     1.0000 !    38.8168 !     0.0    !
+ !  6.5022+04 !     1.0000 !    38.0000 !     0.0    !
+ -----------------------------------------------------
+
+ HEATX HOT-TQCUR B1       TQCURV INLET   
+ -------------------------------------
+   PRESSURE PROFILE:      CONSTANT2   
+   PRESSURE DROP:         0.0         BAR             
+   PROPERTY OPTION SET:   NRTL      RENON (NRTL) / IDEAL GAS                    
+
+ -----------------------------------------------------
+ !  DUTY      !  PRES      !  TEMP      !  VFRAC     !
+ !            !            !            !            !
+ !            !            !            !            !
+ !            !            !            !            !
+ !  CAL/SEC   !  BAR       !  C         !            !
+ !            !            !            !            !
+ !============!============!============!============!
+ !     0.0    !     1.0000 !    93.0000 !     0.0    !
+ !  3096.2876 !     1.0000 !    91.4831 !     0.0    !
+ !  6192.5753 !     1.0000 !    89.9622 !     0.0    !
+ !  9288.8629 !     1.0000 !    88.4375 !     0.0    !
+ !  1.2385+04 !     1.0000 !    86.9088 !     0.0    !
+ !------------+------------+------------+------------!
+ !  1.5481+04 !     1.0000 !    85.3762 !     0.0    !
+ !  1.8578+04 !     1.0000 !    83.8399 !     0.0    !
+ !  2.1674+04 !     1.0000 !    82.2997 !     0.0    !
+ !  2.4770+04 !     1.0000 !    80.7557 !     0.0    !
+ !  2.7867+04 !     1.0000 !    79.2079 !     0.0    !
+ !------------+------------+------------+------------!
+ !  3.0963+04 !     1.0000 !    77.6565 !     0.0    !
+ !  3.4059+04 !     1.0000 !    76.1013 !     0.0    !
+ !  3.7155+04 !     1.0000 !    74.5425 !     0.0    !
+ !  4.0252+04 !     1.0000 !    72.9800 !     0.0    !
+ !  4.3348+04 !     1.0000 !    71.4140 !     0.0    !
+ !------------+------------+------------+------------!
+ !  4.6444+04 !     1.0000 !    69.8443 !     0.0    !
+ !  4.9541+04 !     1.0000 !    68.2711 !     0.0    !
+ !  5.2637+04 !     1.0000 !    66.6945 !     0.0    !
+ !  5.5733+04 !     1.0000 !    65.1143 !     0.0    !
+ !  5.8829+04 !     1.0000 !    63.5307 !     0.0    !
+ !------------+------------+------------+------------!
+ !  6.1926+04 !     1.0000 !    61.9437 !     0.0    !
+ !  6.5022+04 !     1.0000 !    60.3534 !     0.0    !
+ -----------------------------------------------------

@@ -1,0 +1,148 @@
+
+ S1 S2 S3                                
+ --------
+
+ STREAM ID               S1         S2         S3      
+ FROM :                  ----       B1         B1      
+ TO   :                  B1         ----       ----    
+
+ SUBSTREAM: MIXED   
+ PHASE:                  LIQUID     LIQUID     LIQUID 
+ COMPONENTS: KMOL/HR         
+   METHA-01              10.0000     9.0697     0.9303
+   ACETO-01              30.0000     8.1988    21.8012
+   METHY-01               5.0000     2.6011     2.3989
+   BENZE-01              20.0000     1.7380    18.2620
+   CHLOR-01              20.0000     1.3924    18.6076
+ TOTAL FLOW:     
+   KMOL/HR               85.0000    23.0000    62.0000
+   KG/HR               6383.0336  1261.4686  5121.5650
+   L/MIN                110.8673    24.9130    87.2058
+ STATE VARIABLES:
+   TEMP   C              56.8500    55.7801    63.9712
+   PRES   BAR             1.0133     1.0133     1.0133
+   VFRAC                  0.0        0.0        0.0   
+   LFRAC                  1.0000     1.0000     1.0000
+   SFRAC                  0.0        0.0        0.0   
+ ENTHALPY:       
+   CAL/MOL            -3.7580+04 -5.5593+04 -3.0723+04
+   CAL/GM              -500.4295 -1013.6026  -371.9287
+   CAL/SEC            -8.8729+05 -3.5517+05 -5.2913+05
+ ENTROPY:        
+   CAL/MOL-K            -58.3533   -61.9992   -56.8015
+   CAL/GM-K              -0.7771    -1.1304    -0.6876
+ DENSITY:        
+   MOL/CC              1.2778-02  1.5387-02  1.1849-02
+   GM/CC                  0.9596     0.8439     0.9788
+ AVG MW                  75.0945    54.8465    82.6059
+
+ S1                                      
+ --
+
+ STREAM ID               S1      
+ FROM :                  ----    
+ TO   :                  B1      
+
+ SUBSTREAM: MIXED   
+ PHASE:                  LIQUID 
+ COMPONENTS: KMOL/HR         
+   METHA-01              10.0000
+   ACETO-01              30.0000
+   METHY-01               5.0000
+   BENZE-01              20.0000
+   CHLOR-01              20.0000
+ TOTAL FLOW:     
+   KMOL/HR               85.0000
+   KG/HR               6383.0336
+   L/MIN                110.8673
+ STATE VARIABLES:
+   TEMP   C              56.8500
+   PRES   BAR             1.0133
+   VFRAC                  0.0   
+   LFRAC                  1.0000
+   SFRAC                  0.0   
+ ENTHALPY:       
+   CAL/MOL            -3.7580+04
+   CAL/GM              -500.4295
+   CAL/SEC            -8.8729+05
+ ENTROPY:        
+   CAL/MOL-K            -58.3533
+   CAL/GM-K              -0.7771
+ DENSITY:        
+   MOL/CC              1.2778-02
+   GM/CC                  0.9596
+ AVG MW                  75.0945
+
+ S2                                      
+ --
+
+ STREAM ID               S2      
+ FROM :                  B1      
+ TO   :                  ----    
+
+ SUBSTREAM: MIXED   
+ PHASE:                  LIQUID 
+ COMPONENTS: KMOL/HR         
+   METHA-01               9.0697
+   ACETO-01               8.1988
+   METHY-01               2.6011
+   BENZE-01               1.7380
+   CHLOR-01               1.3924
+ TOTAL FLOW:     
+   KMOL/HR               23.0000
+   KG/HR               1261.4686
+   L/MIN                 24.9130
+ STATE VARIABLES:
+   TEMP   C              55.7801
+   PRES   BAR             1.0133
+   VFRAC                  0.0   
+   LFRAC                  1.0000
+   SFRAC                  0.0   
+ ENTHALPY:       
+   CAL/MOL            -5.5593+04
+   CAL/GM             -1013.6026
+   CAL/SEC            -3.5517+05
+ ENTROPY:        
+   CAL/MOL-K            -61.9992
+   CAL/GM-K              -1.1304
+ DENSITY:        
+   MOL/CC              1.5387-02
+   GM/CC                  0.8439
+ AVG MW                  54.8465
+
+ S3                                      
+ --
+
+ STREAM ID               S3      
+ FROM :                  B1      
+ TO   :                  ----    
+
+ SUBSTREAM: MIXED   
+ PHASE:                  LIQUID 
+ COMPONENTS: KMOL/HR         
+   METHA-01               0.9303
+   ACETO-01              21.8012
+   METHY-01               2.3989
+   BENZE-01              18.2620
+   CHLOR-01              18.6076
+ TOTAL FLOW:     
+   KMOL/HR               62.0000
+   KG/HR               5121.5650
+   L/MIN                 87.2058
+ STATE VARIABLES:
+   TEMP   C              63.9712
+   PRES   BAR             1.0133
+   VFRAC                  0.0   
+   LFRAC                  1.0000
+   SFRAC                  0.0   
+ ENTHALPY:       
+   CAL/MOL            -3.0723+04
+   CAL/GM              -371.9287
+   CAL/SEC            -5.2913+05
+ ENTROPY:        
+   CAL/MOL-K            -56.8015
+   CAL/GM-K              -0.6876
+ DENSITY:        
+   MOL/CC              1.1849-02
+   GM/CC                  0.9788
+ AVG MW                  82.6059
